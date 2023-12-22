@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>IndexedDB с использованием HTML-таблицы</title>
+</head>
+<body>
+  <button onclick="updateTable()">Обновить таблицу</button>
+  <br /><br />
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Ключ</th>
+        <th>Значение</th>
+        <th>Изменить</th>
+        <th>Удалить</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <br /><br />
+  <form id="myForm">
+    <label for="key">Ключ: </label>
+    <input type="text" id="key" required /><br />
+    <label for="value">Значение: </label>
+    <input type="text" id="value" required /><br />
+    <button type="button" onclick="saveItem()">Сохранить</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
